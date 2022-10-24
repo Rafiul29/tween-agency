@@ -209,7 +209,7 @@ background-color: var(--white-color);
 }
 
 /* serive section */
-#section-3{
+#section-2{
     background-color: var(--section-bg-color);
 }
 .service-container{
@@ -255,3 +255,67 @@ background-color: var(--white-color);
 
 
 
+/* project section  */
+.project-contianer{
+
+    padding: 6rem 0 6rem 0;
+}
+.project-contianer h3{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.project-grid{
+
+    display: grid;
+    gap:2rem;
+    grid-template-areas: 
+    "a1 a2 a3"
+    "a1 a5 a3"
+    "a4 a5 a3"
+    ;
+    
+}
+.project-item:nth-child(1){
+    grid-area: a1;
+}
+
+.project-item:nth-child(2){
+    grid-area: a2;
+}
+
+.project-item:nth-child(3){
+    grid-area: a3;
+}
+
+.project-item:nth-child(4){
+    grid-area: a4;
+}
+
+.project-item:nth-child(5){
+    grid-area: a5;
+}
+.project-item:nth-child(6){
+    grid-area: a6;
+}
+.project-grid img{
+    
+  width: 100%;
+ 
+}
+.project-item{
+    position: relative;
+}
+
+.work-text-info {
+background-color: var(--section-bg-color);
+border-radius: 0.3rem;
+border-bottom: 5px solid var(--border-color);
+position: absolute;
+left: 0;
+bottom: 0;
+right: 0;
+padding: 20px;
+width: 80%;
+margin: auto;
+margin-bottom: 2rem;
+}
