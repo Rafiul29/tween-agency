@@ -349,12 +349,14 @@ transition: filter 0.115s;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-position: relative;
-z-index: 2;
+    position: relative;
+    background-color: rgb(95, 33, 33);
+
 }
 
 .pricing-container{
-   z-index: 4;
+    position: relative;
+    z-index: 1;
     padding: 6rem 0 6rem 0;
     
 }
@@ -433,9 +435,7 @@ z-index: 2;
     pointer-events: none;
     
   }
-  
   .overlay.dark-overlay {
     background: rgba(0,0,0, 0.75);
-    z-index: 3;
   }
   
