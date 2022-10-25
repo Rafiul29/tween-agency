@@ -91,7 +91,7 @@ place-items: center;
 position: fixed;
 top: 0;
 left: 0;
-
+z-index: 99;
 /* box-shadow:
   0px 39px 43px rgba(0, 0, 0, 0.17)
 ; */
@@ -255,16 +255,16 @@ background-color: var(--white-color);
 
 
 
-/* project section  */
-.project-contianer{
-
+/* work section  */
+.work-contianer{
+z-index: 98;
     padding: 6rem 0 6rem 0;
 }
-.project-contianer h3{
+.work-contianer h3{
     text-align: center;
     margin-bottom: 3rem;
 }
-.project-grid{
+.work-grid{
 
     display: grid;
     gap:2rem;
@@ -275,43 +275,43 @@ background-color: var(--white-color);
     ;
     
 }
-.project-item:nth-child(1){
+.work-item:nth-child(1){
     grid-area: a1;
 }
 
-.project-item:nth-child(2){
+.work-item:nth-child(2){
     grid-area: a2;
 }
 
-.project-item:nth-child(3){
+.work-item:nth-child(3){
     grid-area: a3;
 }
 
-.project-item:nth-child(4){
+.work-item:nth-child(4){
     grid-area: a4;
 }
 
-.project-item:nth-child(5){
+.work-item:nth-child(5){
     grid-area: a5;
 }
-.project-item:nth-child(6){
+.work-item:nth-child(6){
     grid-area: a6;
 }
-.project-grid img{
+.work-item img{
     border-radius: .3rem;
     transition: all 0.5s;
     width: 100%;
     padding: 1rem;
 
 }
-.project-item:hover img{
+.work-item:hover img{
     opacity: 1;
     transform: scale(1.05);
 }
-.project-item:hover .work-text-info {
+.work-item:hover .work-text-info {
     filter: blur(2px);
   }
-.project-item{
+.work-item{
     position: relative;
 }
 
@@ -339,3 +339,103 @@ transition: filter 0.115s;
     margin-right: 7px;
     margin-bottom: 10px;
 }
+
+
+
+/* pricing section */
+
+#section-4{
+    background-image: url('./img/maria-stewart-p4tj0g-_aMM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+position: relative;
+z-index: 2;
+}
+
+.pricing-container{
+   z-index: 4;
+    padding: 6rem 0 6rem 0;
+    
+}
+.pricing-heading{
+
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+  
+}
+
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.pricing-item{
+    position: relative;
+    background-color: var(--white-color);
+    padding: 4rem 2rem;
+
+   
+}
+.pricing-item:last-child{
+    height: 95%;
+}
+.pricing-head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:1rem ;
+   border-bottom: 1.5px solid rgb(207, 202, 202);
+}
+.pricing-head h5 i{
+    margin-right: 1rem;
+}
+.pricing-body{
+    padding-top:2rem;
+    padding-left: 4rem;
+}
+.pricing-body h5{
+    margin-bottom: 0.5rem;
+}
+.pricing-body ul li{
+    font-size: 1rem;
+    list-style: circle;
+    margin-left: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.pricing-body h5{
+    font-size: 2rem;
+}
+.pricing-body p{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.pricing-item::after{
+    content: "Recommand Plan";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0.3rem ;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.overlay {
+    background: rgba(128,142,176, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    
+  }
+  
+  .overlay.dark-overlay {
+    background: rgba(0,0,0, 0.75);
+    z-index: 3;
+  }
+  
