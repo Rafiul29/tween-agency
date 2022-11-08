@@ -1,0 +1,165 @@
+  /* mobile responsive */
+
+  @media screen and (max-width: 1300px)  {
+    h1{
+     font-size: 2.5rem;
+    }
+    h3{
+      font-size: 2.1rem;
+    }
+    p{
+     font-size: 1.5rem;
+    }
+   }
+
+   @media screen and (max-width:1200px) {
+      .nav-btn .btn{
+        display: none;
+      }
+    
+   .about-text p:last-child{
+    display: none;
+   }
+   .work-text-info{
+    padding: 10px;
+   }
+    .work-text-info h5{
+      font-size:1.4rem ;
+   }
+   .form-container{
+    width: 70%;
+   }
+   .form-item label{
+    font-size: 1.2rem;
+   }
+   .text-area label{
+    font-size: 1.2rem;
+   }
+  }
+
+  @media screen and (max-width:992px) {
+    .nav-links{
+      gap: 2rem;
+      }
+    .service-grid{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:2rem;
+  }
+  .work-grid{
+
+    display: grid;
+    gap:1rem;
+    grid-template-areas: 
+    "a1 a2 a3"
+    "a1 a2 a3"
+    "a1 a2 a3"
+    "a4 a5 a3"
+    "a4 a5 a3"
+    ;
+    
+  }
+
+.work-item:nth-child(1){
+  grid-area: a1;
+}
+
+.work-item:nth-child(2){
+  grid-area: a2;
+}
+
+.work-item:nth-child(3){
+  grid-area: a3;
+}
+
+.work-item:nth-child(4){
+  grid-area: a4;
+}
+
+.work-item:nth-child(5){
+  grid-area: a5;
+}
+.work-item:nth-child(6){
+  grid-area: a6;
+}
+.work-item img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.work-text-info {
+  padding: 18px;
+}
+.work-text-info h5{
+  font-size: 1.2rem;
+}
+
+.work-text-info small{
+  font-size: 0.6rem;
+}
+  }
+
+  @media screen and (max-width:992px){
+    .nav-links{
+display: none;
+    }
+    .header-container{
+      margin-top: -50px;
+      grid-template-columns: 1fr;
+  margin-bottom: -5rem;
+    }
+    .hero-right{
+      display: none;
+    }
+
+
+    .about-body{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;   
+     }
+     .about-right-btn{
+      display: none;
+     }
+
+     .service-grid{
+      grid-template-columns: 1fr;
+     }
+     .service-item:nth-child(even){
+      padding: 4rem 0 4rem 0;
+     }
+
+     #section-3{
+      display: none;
+     }
+
+     .pricing-grid{
+      grid-template-columns: 1fr;
+      gap: 5rem;
+     }
+     .pricing-item:last-child{
+      height: 100%;
+  }
+  .pricing-heading{
+
+    font-size: 2.5rem;
+}
+
+.form-grid{
+ 
+  grid-template-columns: 1fr
+ 
+}
+.footer-item:nth-child(2){
+  display: none;
+}
+
+.footer-item:nth-child(3){
+  display: none;
+}
+.footer-item input{
+  display: inline-block;
+}
+
+  }

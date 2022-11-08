@@ -102,7 +102,6 @@ z-index: 99;
     justify-content: space-between;
     align-items: center;
     color: var(--black-color);
-
 }
 .nav-links{
 display: flex;
@@ -110,8 +109,11 @@ justify-content: center;
 gap: 3rem;
 }
 .nav-logo a{
+    color: inherit;
     font-size: 2rem;
+    font-weight: 600;
     text-align: center;
+    transition: 0.5s;
 }
 .nav-logo  h4.nav-icon{
     margin-top: -4px;
@@ -121,7 +123,9 @@ gap: 3rem;
     transition: var(--transition)
 }
 .nav-links li a{
+    color: inherit;
     font-size: 1.4rem;
+    font-weight: 500;
  
 }
 .nav-links li a:hover{
@@ -298,6 +302,8 @@ z-index: 98;
     grid-area: a6;
 }
 .work-item img{
+    width: 100%;
+    height: 100%;
     border-radius: .3rem;
     transition: all 0.5s;
     width: 100%;
@@ -548,4 +554,9 @@ color: var(--black-color);
   }
   .socils-icons i:hover{
     color: var(--primary-color);
+  }
+
+  ::placeholder{
+    font-size: 1rem;
+    color: var(--white-color);
   }
