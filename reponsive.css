@@ -98,11 +98,21 @@
 .work-text-info small{
   font-size: 0.6rem;
 }
+h5{
+  font-size: 1.8rem;
+}
+.pricing-body h5{
+  font-size: 1.5rem;
+}
+
+.pricing-body p{
+  font-size: 1.5rem;
+}
   }
 
-  @media screen and (max-width:992px){
+  @media screen and (max-width:768px){
     .nav-links{
-display: none;
+  display: none;
     }
     .header-container{
       margin-top: -50px;
@@ -147,9 +157,8 @@ display: none;
 }
 
 .form-grid{
- 
+
   grid-template-columns: 1fr
- 
 }
 .footer-item:nth-child(2){
   display: none;
@@ -162,4 +171,29 @@ display: none;
   display: inline-block;
 }
 
+  }
+
+  @media screen and (max-width:540px) {
+    h5{
+      font-size: 1.8rem;
+    }
+    .pricing-body h5{
+      font-size: 1.3rem;
+    }
+    .pricing-body p{
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width:400px){
+    .pricing-item{
+      padding: 4rem 1rem;
+  }
+  .pricing-head h5 i{
+    margin-right: 0.5rem;
+}
+  .pricing-body{
+    padding-top:1.5rem;
+    padding-left: 2.5rem;
+}
   }
